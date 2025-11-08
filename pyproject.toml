@@ -1,17 +1,19 @@
 [project]
 name = "hw-16-poetry"
 version = "0.1.0"
-description = "Homework for QA Guru Python course"
+description = "QA Guru Python course project"
 authors = [
     {name = "Illia Karcheuski"}
 ]
 license = {text = "MIT"}
-requires-python = ">=3.13"
+readme = "README.md"
+requires-python = "^3.13"
 dependencies = [
-    "pytest (>=8.4.2,<9.0.0)",
-    "selene (>=1.0.2,<2.0.0)",
-    "selenium (==4.10.0)"
+    "selenium (==4.10.0)",
+    "selene (==1.0.2)",
+    "pytest (==8.4.2)"
 ]
+
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
@@ -19,5 +21,5 @@ build-backend = "poetry.core.masonry.api"
 
 [dependency-groups]
 dev = [
-    "pylint (>=4.0.2,<5.0.0)"
+    "pylint (==4.0.2)"
 ]
